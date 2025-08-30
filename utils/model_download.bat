@@ -4,7 +4,7 @@ curl.exe -L -o models/clip/SDXL-waiNSFWdmd2_clip_l.safetensors -# https://huggin
 curl.exe -L -o models/vae/SDXL-waiNSFWdmd2_vae.safetensors -# https://huggingface.co/asfdrwe/WAI14DMD2-GGUF/resolve/main/SDXL-waiNSFWdmd2_vae.safetensors
 
 curl.exe -L -o models/depthanything/depth_anything_v2_vitl_fp16.safetensors -# https://huggingface.co/Kijai/DepthAnythingV2-safetensors/resolve/main/depth_anything_v2_vitl_fp16.safetensors
-curl.exe -L -o models/controlnet/CN-anytest_v4-marged.safetensors -# https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test_controlnet2/CN-anytest_v4-marged.safetensors
+curl.exe -L -o models/controlnet/CN-anytest_v4-marged.safetensors -# https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v4-marged.safetensors
 
 curl.exe -L -o models/diffusion_models/Wan2.1_14B_VACE-Q4_K_M.gguf -# https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q4_K_M.gguf
 curl.exe -L -o models/clip/umt5-xxl-encoder-Q4_K_M.gguf -# https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q4_K_M.gguf
