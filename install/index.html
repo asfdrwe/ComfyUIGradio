@@ -1,0 +1,697 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="生成AI, 入門, ComfyUI, Gradio, generative AI, for beginners">
+      
+      
+        <meta name="author" content="asfdrwe">
+      
+      
+        <link rel="canonical" href="https://asfdrwe.github.io/ComfyUIGradio/install/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../usage/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>インストールと起動 - ComfyUIGradio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ComfyUIGradio" class="md-header__button md-logo" aria-label="ComfyUIGradio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ComfyUIGradio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              インストールと起動
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/asfdrwe/ComfyUIGRadio/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ComfyUIGradio" class="md-nav__button md-logo" aria-label="ComfyUIGradio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ComfyUIGradio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/asfdrwe/ComfyUIGRadio/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    インストールと起動
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    インストールと起動
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows + NVIDIAのグラフィックボードの場合
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows + NVIDIAのグラフィックボードの場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      実行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      終了方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux の場合や手動でインストールする場合
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux の場合や手動でインストールする場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comfyui" class="md-nav__link">
+    <span class="md-ellipsis">
+      ComfyUI のインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comfyuigradio" class="md-nav__link">
+    <span class="md-ellipsis">
+      ComfyUIGradio のインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      実行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      終了方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radeon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radeon での動画生成の注意点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      起動オプション
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使い方
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ライセンス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows + NVIDIAのグラフィックボードの場合
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows + NVIDIAのグラフィックボードの場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      実行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      終了方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux の場合や手動でインストールする場合
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux の場合や手動でインストールする場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comfyui" class="md-nav__link">
+    <span class="md-ellipsis">
+      ComfyUI のインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comfyuigradio" class="md-nav__link">
+    <span class="md-ellipsis">
+      ComfyUIGradio のインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      実行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      終了方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radeon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radeon での動画生成の注意点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      起動オプション
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div><h1 id="_1">インストールと起動</h1>
+<h2 id="windows-nvidia">Windows + NVIDIAのグラフィックボードの場合</h2>
+<p>ComfyUI 本体と実行に必要な Python 等必要なプログラム、さらに必要なモデルすべてひとまとめにした
+Windows 用配布パッケージを用意しました。ファイルサイズが非常に大きい(約 26 GB)ので、
+ストレージの容量や通信量に気を付けてください。</p>
+<p><a href="https://huggingface.co/asfdrwe/WAI14DMD2-GGUF/resolve/main/ComfyUIGradio.zip">こちら</a>を
+クリックしてダウンロードしてください。ComfyUIGradio をインストールしたいフォルダにファイルを
+移動させ、右クリックしすべて展開を選びファイルを展開してください。</p>
+<h3 id="_2">実行</h3>
+<p><code>ComfyUIGradio</code> フォルダを開き、<code>ComfyUI_windows_portable</code> フォルダを開いてください。</p>
+<p><img alt="install01.png" src="../image/install01.png"></p>
+<p><code>run_nvidia_gpu.bat</code> をダブルクリックして ComfyUI を実行します。</p>
+<p><img alt="install02.png" src="../image/install02.png"></p>
+<p>黒画面に文字が表示されるターミナルと、ブラウザ上でComfyUI 標準の UI が起動します。ブラウザの方は
+閉じてもかまいません。</p>
+<p><img alt="install03.png" src="../image/install03.png"></p>
+<p>次に <code>ComfyUIGradio</code> フォルダに戻り、中の <code>ComfyUIGradio</code> を開き、<code>run_comfyuigradio.bat</code>をダブル
+クリックしてください。 ターミナルで ComfyUIGradio が起動し、ブラウザが開かれます。</p>
+<p><img alt="install04.png" src="../image/install04.png">
+<img alt="install05.png" src="../image/install05.png"></p>
+<h3 id="_3">終了方法</h3>
+<p>ComfyUI のターミナルと ComfyUIGradio のターミナルとブラウザを閉じてください。</p>
+<h2 id="linux">Linux の場合や手動でインストールする場合</h2>
+<h3 id="comfyui">ComfyUI のインストール</h3>
+<p><a href="https://github.com/comfyanonymous/ComfyUI?tab=readme-ov-file#manual-install-windows-linux">公式サイト</a>などを
+参考に ComfyUI をインストールしてください。</p>
+<p>Radeon については<a href="https://qiita.com/asfdrwe/items/ae05a15ae42fb65c8dd2">Radeon 7800 XT のメモ</a> も参考にどうぞ。</p>
+<p>カスタムノードは、<a href="https://github.com/city96/ComfyUI-GGUF">ComfyUI-GGUF</a>と<a href="https://github.com/kijai/ComfyUI-DepthAnythingV2">ComfyUI-DepthAnythingV2</a>を使うので、
+これらを<code>git</code>でインストールしてください。</p>
+<p><code>ComfyUI</code>フォルダ以下で</p>
+<pre><code>cd custom_nodes
+git clone https://github.com/city96/ComfyUI-GGUF
+cd ComfyUI-GGUF
+pip install -r requirements.txt 
+cd ..
+git clone https://github.com/kijai/ComfyUI-DepthAnythingV2
+cd ComfyUI-DepthAnythingV2
+pip install -r requirements.txt 
+cd ..
+</code></pre>
+<h3 id="comfyuigradio">ComfyUIGradio のインストール</h3>
+<p>python 3.13 と git をインストールしてください。　</p>
+<p><code>git</code> でファイルを取得し、<code>venv</code>でPython環境を構築して有効にし、<code>pip</code>で必要な
+モジュールをインストールします。</p>
+<pre><code>git clone https://github.com/asfdrwe/ComfyUIGradio
+cd ComfyUIGradio
+python3.13 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+</code></pre>
+<h3 id="_4">実行</h3>
+<p>ターミナルで ComfyUI を起動してください。別のターミナルで</p>
+<pre><code>python app.py
+</code></pre>
+<p>で ComfyUIGradio を起動してください。</p>
+<h3 id="_5">終了方法</h3>
+<p>ターミナルで Ctrl+C を押して、ComfyUI や ComfyUIGradio を終了させてください。</p>
+<h3 id="radeon">Radeon での動画生成の注意点</h3>
+<p>Fedora 42 + Radeon RX 7800 XT は ComfyUI の動作がいまいちです。</p>
+<p>画像生成の場合、ComfyUI を <code>--use-split-cross-attention --force-fp16 --fp16-vae</code>付きで起動しないと
+VAE デコーディング時に VRAM 不足でタイリングになる場合があるので生成が遅くなります。</p>
+<p>また動画生成の場合、ComfyUI を <code>--use-quad-cross-attention --force-fp16 --bf16-vae --lowvram</code>付きで
+起動しないと VRAM 不足になります。</p>
+<p>実行コマンド例:</p>
+<pre><code>python main.py --use-quad-cross-attention --bf16-vae --lowvram --force-fp16 --auto-launch
+</code></pre>
+<p>また、動画生成時、何度も Wan モデルのロードしようとすると、モデルのロードで動作が止まります。
+ComfyUIGradio では使えるようにしていませんが、LoRA を切り替える場合も、Wan モデルのロードで動作が止まります。
+ComfyUIGradio2 で利用できる High と Low の 2 つのモデルを使う Wan 2.2 も切り替えの際のロードで止まるので
+うまく動かせていません。</p>
+<h2 id="_6">起動オプション</h2>
+<p>ComfyUI を別のマシンで動かしている場合、次のオプションで接続できます。</p>
+<ul>
+<li>--server_addr ComfyUIを実行しているマシンのIPアドレス</li>
+<li>--server_port ComfyUIを実行しているポート番号</li>
+</ul>
+<p>Windows の場合エディタで<code>run_comfyuigradio.bat</code> の<code>python app.py</code>の箇所を次のように修正してください。</p>
+<pre><code>python app.py --server_addr ComfyUIのIPアドレス --server_port ComfyUIのポート番号
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright (c) 2025 asfdrwe, CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

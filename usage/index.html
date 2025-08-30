@@ -1,0 +1,672 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="生成AI, 入門, ComfyUI, Gradio, generative AI, for beginners">
+      
+      
+        <meta name="author" content="asfdrwe">
+      
+      
+        <link rel="canonical" href="https://asfdrwe.github.io/ComfyUIGradio/usage/">
+      
+      
+        <link rel="prev" href="../install/">
+      
+      
+        <link rel="next" href="../license/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>使い方 - ComfyUIGradio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ComfyUIGradio" class="md-header__button md-logo" aria-label="ComfyUIGradio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ComfyUIGradio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              使い方
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/asfdrwe/ComfyUIGRadio/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ComfyUIGradio" class="md-nav__button md-logo" aria-label="ComfyUIGradio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ComfyUIGradio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/asfdrwe/ComfyUIGRadio/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    インストールと起動
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    使い方
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    使い方
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文章から(文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像から(画像と文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像の一部修正(画像の一部を文章に基づき修正)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像の特徴から(画像の特徴と文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像の深度情報から(画像の深度情報と文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像から動画(画像と文章から動画生成(Wan2.1))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像と動画から動画(画像と動画の特徴と文章から動画生成(Wan2.1))
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ライセンス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文章から(文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像から(画像と文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像の一部修正(画像の一部を文章に基づき修正)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像の特徴から(画像の特徴と文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像の深度情報から(画像の深度情報と文章から画像生成)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像から動画(画像と文章から動画生成(Wan2.1))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像と動画から動画(画像と動画の特徴と文章から動画生成(Wan2.1))
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div><h1 id="_1">使い方</h1>
+<p>上に7つのタブが用意されています。左の5つが画像生成、右の2つが動画生成です。</p>
+<p><img alt="install05.png" src="../image/install05.png"></p>
+<h2 id="_2">文章から(文章から画像生成)</h2>
+<p>ポジティブプロンプトに、生成したい画像に関する英単語をコンマ(,)で区切って入力し、
+幅と高さに生成したい画像の大きさを指定してください。</p>
+<p>プロンプト例:</p>
+<pre><code>1girl, smile, school uniform, classroom, standing
+(少女、笑顔、制服、教室、立っている)
+</code></pre>
+<p><img alt="usage01.png" src="../image/usage01.png"></p>
+<p>生成ボタンを押せば右の生成画像に画像が生成されます。</p>
+<p><img alt="usage02.png" src="../image/usage02.png"></p>
+<p><code>ComfyUI</code>フォルダの<code>output</code>フォルダに保存されます。</p>
+<p><img alt="usage03.png" src="../image/usage03.png">
+<img alt="generated01.png" src="../generated/ComfyUI_00001_.png"></p>
+<p>ComfyUIGradio の生成画像の上で右クリックして名前を付けて保存でも保存できますが、
+ファイル名がview(拡張子なし)なので、適当なファイル名＋拡張子『.png』(tmp01.png等)で保存してください。</p>
+<p>プロンプトの具体例は『sdxl プロンプト例』等で検索してください(なお画像に含めたくない内容を入力する
+ネガティブプロンプトは使えません)。</p>
+<h2 id="_3">画像から(画像と文章から画像生成)</h2>
+<p><img alt="usage04.png" src="../image/usage04.png"></p>
+<p>左上の画像欄に画像をここにドロップまたはクリックして元となる画像のアップロードを
+行ってください。アップロードした画像は <code>ComfyUI</code> フォルダの <code>input</code> フォルダに
+保存されます。ここではさきほど生成した画像を使います。</p>
+<p><img alt="usage05.png" src="../image/usage05.png"></p>
+<p>この画像に対して、生成したい画像に関する英単語をコンマで区切ってポジティブプロンプトに入力します。
+生成ボタンを押せば右の生成画像に画像が生成されます。</p>
+<p>プロンプト例:</p>
+<pre><code>1girl, angry, school uniform, classroom, standing
+(少女、怒り、制服、教室、立っている)
+</code></pre>
+<p><img alt="usage06.png" src="../image/usage06.png">
+<img alt="generated02.png" src="../generated/ComfyUI_00002_.png"></p>
+<p>ノイズ強度を上げると元の画像から大きく変化し、ノイズ強度を下げると元の画像により
+近い画像が生成されます。デフォルトは 0.75 にしています。1 にすると元の画像を
+参照しないのと同じになります。</p>
+<p><img alt="usage07.png" src="../image/usage07.png"></p>
+<h2 id="_4">画像の一部修正(画像の一部を文章に基づき修正)</h2>
+<p>左上の画像欄に一部修正したい画像をここにドロップまたはクリックして元となる画像のアップロードを
+行ってください。</p>
+<p><img alt="usage08.png" src="../image/usage08.png"></p>
+<p>画像に対して修正したい箇所をマウスで塗ってください。左の黒丸でブラシの大きさ、
+右上に元に戻すボタン等があります。修正したい内容に関する英単語をコンマで区切って
+ポジティブプロンプトに入力します。</p>
+<p>プロンプト例:</p>
+<pre><code>1girl, smile, open mouth, classroom, school uniform, standing
+(少女、笑顔、口を開ける、教室、制服、立っている)
+</code></pre>
+<p><img alt="usage09.png" src="../image/usage09.png"></p>
+<p>生成ボタンを押せば右の生成画像に画像が生成されます。</p>
+<p><img alt="usage10.png" src="../image/usage10.png">
+<img alt="generated03.png" src="../generated/ComfyUI_00003_.png"></p>
+<p>ノイズ強度を上げると元の画像から大きく変化し、ノイズ強度を下げると元の画像により
+近い画像が生成されます。</p>
+<h2 id="_5">画像の特徴から(画像の特徴と文章から画像生成)</h2>
+<p>画像の特徴を理解して生成画像に反映できる ControlNet 機能を利用して、落書きレベルの
+線画(Scribble)や棒人形で人のポーズを指定できる <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a>形式の
+画像と、ポジティブプロンプトに入力した文章から画像を生成します。</p>
+<p>画面構成やポーズを指定できるので、文字では記述しにくい画像内容でも生成しやすくなります。</p>
+<p>線画は適当なペイントツールで自分で描いてください。</p>
+<p>OpenPose 形式のポーズ画像は<a href="https://openposeai.com/">3D Openpose Editor</a>で作成できます。
+写実的な人物画像から OpenPose 形式のポーズ画像を生成することも できます。</p>
+<p><img alt="usage11.png" src="../image/usage11.png">
+<img alt="usage12.png" src="../image/usage12.png"></p>
+<p>3D Openpose Editor についてはAUTOMATIC1111拡張の解説なので少し違う部分もありますが
+<a href="https://note.com/levelma/n/na348b35d5fa1">こちら</a>などを参考にしてください。</p>
+<p>線画やポーズ画像を左上の画像からアップロードしてください。
+ここでは次の OpenPose 形式の画像を保存してアップロードしてください。</p>
+<p><img alt="pose_2025_08_30_14_48_30.png" src="../image/pose_2025_08_30_14_48_30.png"></p>
+<p>生成したい内容に関する英単語をコンマ区切りでポジティブプロンプトに入力します。</p>
+<p>プロンプト例:</p>
+<pre><code>1girl, smile, classroom, school uniform
+(少女、笑顔、教室、制服)
+</code></pre>
+<p><img alt="usage13.png" src="../image/usage13.png"></p>
+<p>生成ボタンを押せば右の生成画像に画像が生成されます。</p>
+<p><img alt="usage14.png" src="../image/usage14.png">
+<img alt="generated04.png" src="../generated/ComfyUI_00004_.png"></p>
+<p>うまくいかない場合も多いので何度も生成してください。</p>
+<h2 id="_6">画像の深度情報から(画像の深度情報と文章から画像生成)</h2>
+<p>元の画像から深度情報（画像に描かれているものへの距離を濃淡値で表した画像)を抽出し
+ControlNet に与え、さらにポジティブプロンプトに入力した文章から画像を生成します。</p>
+<p>元の画像の画面構成を反映できるので、文字では記述しにくい画像内容でも生成しやすくなります。</p>
+<p>左上の画像から参照元画像をアップロードしてください。
+ポジティブプロンプトに内容に関する英単語をコンマで区切って入力します。</p>
+<p>プロンプト例:</p>
+<pre><code>1girl, crying, tears, pink hair, school uniform, short sleeves, 
+white shirt, green tie, grey skirt, pleated skirt, plaid skirt
+(少女、泣く、涙、ピンク髪、制服、短袖、
+白シャツ、緑タイ、グレースカート、プリーツスカート、チェック柄スカート)
+</code></pre>
+<p><img alt="usage15.png" src="../image/usage15.png"></p>
+<p>生成する画像の幅や高さを指定して生成ボタンを押してください。
+画像と深度情報が生成されます。</p>
+<p><img alt="usage16.png" src="../image/usage16.png">
+<img alt="generated05.png" src="../generated/ComfyUI_00006_.png">
+<img alt="depth01.png" src="../generated/Depth_00001_.png"></p>
+<h2 id="wan21">画像から動画(画像と文章から動画生成(Wan2.1))</h2>
+<p>Wan2.1 Vace を利用して開始画像を指定し、その画像に対する生成したい動画に関する文章を
+英文(または中国語文)で入力することで、動画を生成することができます。</p>
+<p>左上の画像から開始画像をアップロードしてください。</p>
+<p>ポジティブプロンプトは、これまでと異なり、英語(または中国語)の文章で入力します。
+幅と高さとフレーム数を指定してください。フレーム数は動画の長さです。
+1 秒 16 フレームなので、17 フレームで約 1 秒、33 フレームで約 2 秒、49 フレームで
+約 3 秒となります。ここでは横:480 縦:640 時間:49 フレーム 約 3 秒で の動画を生成します。</p>
+<p>プロンプト例:</p>
+<pre><code>A girl is dancing intensively in classroom.
+(少女が教室で激しく踊っている)
+</code></pre>
+<p><img alt="usage17.png" src="../image/usage17.png"></p>
+<p>生成ボタンを押して動画を生成してください。画像に比べると生成には時間がかかります。</p>
+<p><img alt="usage18.png" src="../image/usage18.png">
+<div class="video-container"><iframe src="../generated/ComfyUI_00008_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<p>webm 形式の動画は標準ではブラウザで再生できるので、保存した動画ファイルを再生したい場合は
+ブラウザにドラックアンドドロップしてください。</p>
+<h2 id="wan21_1">画像と動画から動画(画像と動画の特徴と文章から動画生成(Wan2.1))</h2>
+<p>開始画像と参照動画の深度情報に基づく動きと動作に関する文章から動画を生成することができます。</p>
+<p>左上の画像から開始画像をアップロードしてください。</p>
+<p>参照動画の例として
+<a href="https://docs.comfy.org/tutorials/video/wan/vace">ComfyUI の wiki</a>より
+<a href="https://raw.githubusercontent.com/Comfy-Org/example_workflows/refs/heads/main/video/wan/vace/v2v/vace_v2v.mp4">この動画</a>をダウンロードしてください。</p>
+<p>ポジティブプロンプトは英文で入力します。
+幅と高さとフレーム数を指定してください。ここでは横:480 縦:640 時間:49 フレーム 約 3 秒で の動画を生成します。</p>
+<p>プロンプト例: </p>
+<pre><code>A girl is dancing in classroom.
+(少女が教室で踊っている)
+</code></pre>
+<p><img alt="usage19.png" src="../image/usage19.png">
+<img alt="usage20.png" src="../image/usage20.png"></p>
+<p>生成ボタンを押して動画を生成してください。</p>
+<p><div class="video-container"><iframe src="../generated/ComfyUI_00010_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div><div class="video-container"><iframe src="../generated/Depth_00002_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright (c) 2025 asfdrwe, CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
