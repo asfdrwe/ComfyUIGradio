@@ -211,6 +211,8 @@ A girl is dancing in classroom.
 ![type:video](generated/ComfyUI_00010_.webm)
 ![type:video](generated/Depth_00002_.webm)
 
+注: 深度動画と生成動画が逆になる場合があります。
+
 ## 動作がおかしい場合
 
 Gradio でファイルを扱う際のファイルのキャッシュは Windows の場合標準では
