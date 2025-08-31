@@ -48,7 +48,7 @@ def create(addr):
       fn = generate,
       title = "画像の一部を文章に基づき修正",
       inputs = [baseimage, positive, denoise],
-      outputs = "image",
+      outputs = [image],
       submit_btn = "修正",
       clear_btn = None,
     flagging_mode = "never")
