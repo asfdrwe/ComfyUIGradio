@@ -214,7 +214,8 @@ A girl is dancing in classroom.
 ## 動作がおかしい場合
 
 Gradio でファイルを扱う際のファイルのキャッシュは Windows の場合標準では
-`C:\ユーザ\ユーザ名\AppData\Local\gradio` です。
+`C:\ユーザ\ユーザ名\AppData\Local\gradio` です(隠しフォルダなので
+エクスプローラのオプションを設定しないと表示されません)。
 
 ComfyUI の出力と ComfyUIGradio の生成時の表示が食い違うなど、動作が
 おかしくなっている場合、このフォルダを削除し、ブラウザのキャッシュを
