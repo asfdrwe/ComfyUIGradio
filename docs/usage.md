@@ -210,3 +210,13 @@ A girl is dancing in classroom.
 
 ![type:video](generated/ComfyUI_00010_.webm)
 ![type:video](generated/Depth_00002_.webm)
+
+## 動作がおかしい場合
+
+Gradio でファイルを扱う際のファイルのキャッシュは Windows の場合標準では
+`C:\ユーザ\ユーザ名\AppData\Local\gradio` です。
+
+ComfyUI の出力と ComfyUIGradio の生成時の表示が食い違うなど、動作が
+おかしくなっている場合、このフォルダを削除し、ブラウザのキャッシュを
+削除し、ComfyUI と ComfyUIGradio を再起動してください。
+
