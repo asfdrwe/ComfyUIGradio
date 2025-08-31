@@ -340,6 +340,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作がおかしい場合
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -454,6 +463,15 @@
   <a href="#wan21_1" class="md-nav__link">
     <span class="md-ellipsis">
       画像と動画から動画(画像と動画の特徴と文章から動画生成(Wan2.1))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作がおかしい場合
     </span>
   </a>
   
@@ -610,7 +628,13 @@ white shirt, green tie, grey skirt, pleated skirt, plaid skirt
 <p><img alt="usage19.png" src="../image/usage19.png">
 <img alt="usage20.png" src="../image/usage20.png"></p>
 <p>生成ボタンを押して動画を生成してください。</p>
-<p><div class="video-container"><iframe src="../generated/ComfyUI_00010_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div><div class="video-container"><iframe src="../generated/Depth_00002_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p></div>
+<p><div class="video-container"><iframe src="../generated/ComfyUI_00010_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div><div class="video-container"><iframe src="../generated/Depth_00002_.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h2 id="_7">動作がおかしい場合</h2>
+<p>Gradio でファイルを扱う際のファイルのキャッシュは Windows の場合標準では
+<code>C:\ユーザ\ユーザ名\AppData\Local\gradio</code> です。</p>
+<p>ComfyUI の出力と ComfyUIGradio の生成時の表示が食い違うなど、動作が
+おかしくなっている場合、このフォルダを削除し、ブラウザのキャッシュを
+削除し、ComfyUI と ComfyUIGradio を再起動してください。</p></div>
 
 
 
