@@ -98,10 +98,10 @@ VAE デコーディング時に VRAM 不足でタイリングになる場合が�
 python main.py --use-quad-cross-attention --bf16-vae --lowvram --force-fp16 --auto-launch
 ```
 
-また、動画生成時、何度も Wan モデルのロードしようとすると、モデルのロードで動作が止まります。
-ComfyUIGradio では使えるようにしていませんが、LoRA を切り替える場合も、Wan モデルのロードで動作が止まります。
-ComfyUIGradio2 で利用できる High と Low の 2 つのモデルを使う Wan 2.2 も切り替えの際のロードで止まるので
-うまく動かせていません。
+また、動画生成時、何度も Wan モデルのロードしようとすると、モデルのロードで動作が止まる場合があります。
+
+[こちらの記事](https://note.com/kemari_81ckqlbg/n/n9a2b8ad20159) を参考に flash attention や sage-attention を導入すると改善する場合がありますが、Geforce 3060 に比べると
+十分な動作とはいえません。
 
 ## 起動オプション
 ComfyUI を別のマシンで動かしている場合、次のオプションで接続できます。
